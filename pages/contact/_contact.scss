@@ -1,5 +1,5 @@
-.contacts-wrap {
-    padding: 5rem 15%;
+#contacts-wrap {
+    // padding: 5rem 15%;
     display: flex;
     flex-direction: row;
     font-size: 2rem;
@@ -16,12 +16,30 @@
             text-align: center;
         }
 
-       
+       @include mediaMd {
+           h1 {
+               font-size: 3rem;
+           }
+           h2 {
+               font-size: 2.4rem;
+           }
+       }
+       @include mediaSm {
+        //    h1 {
+        //        font-size: 2.5rem;
+        //    }
+        //    h2 {
+        //        font-size: 2rem;
+        //    }
+        //    h3 {
+        //        font-size: 1.7rem;
+        //    }
+       }
     }
 
     .need-help {
         #contact-form {
-            margin: 10rem 0;
+            margin: 5rem 0;
             padding: 0 10%;
         }
 
@@ -41,7 +59,22 @@
         }
 
         >h2 {
-            margin-top: 10rem;
+            margin-top: 5rem;
+        }
+    }
+
+    @include mediaMd {
+        flex-direction: column;
+
+        .need-help, .our-contacts {
+            width: 100%;
+        }
+    }
+    @include mediaSm {
+        flex-direction: column;
+
+        .need-help, .our-contacts {
+            width: 100%;
         }
     }
 

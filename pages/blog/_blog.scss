@@ -44,5 +44,16 @@
                 color: #ffffff;
             }
         }
+
+        @include mediaMd {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include mediaSm {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    @include mediaMd {
+        // padding-top: 10vh;
     }
 }

@@ -10,7 +10,7 @@
         background-color: rgba(0, 0, 0, 0.3);
 
         #answer {
-            margin-top: 22rem;
+            margin-top: 25vh;
             width: 50%;
             position: absolute;
             right: 0;
@@ -22,7 +22,35 @@
         color: $accent-color;
         padding: 1rem;
     }
+    @include mediaMd {
+        margin-top: 10vh;
 
+        h1 {
+            font-size: 3rem;
+        }
+        .wrap {
+            
+            #answer {
+                margin-top: 20vh;
+                width: 60%;
+            }
+        }
+        
+    }
+    @include mediaSm {
+        margin-top: 10vh;
+
+        h1 {
+            font-size: 2.5rem;
+        }
+        .wrap {
+            
+            #answer {
+                margin-top: 20vh;
+                width: 60%;
+            }
+        }
+    }
     
 }
 
@@ -32,6 +60,10 @@
     .mission-statement {
         margin: 2rem 0 6rem 0;
         padding: 3rem 20%;
+
+        @include mediaMd {
+            padding: 3rem 10%;
+        }
     }
 
     .info-box {
@@ -53,6 +85,39 @@
                 width: 50%;
                 height: auto;
                 object-fit: contain;
+            }
+
+            @include mediaMd {
+                padding: 5rem 1rem;
+                flex-direction: column;
+
+                .info-text {
+                    padding: 1rem;
+                }
+
+                #why-info {
+                    width: 100%;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+            @include mediaSm {
+                padding: 3rem 0.5rem;
+                flex-direction: column;
+                
+                .info-text {
+                    padding: 1rem;
+                }
+
+                #why-info {
+                    width: 100%;
+                }
+
+                img {
+                    width: 100%;
+                }
             }
         }
     }

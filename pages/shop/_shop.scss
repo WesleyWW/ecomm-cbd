@@ -1,7 +1,5 @@
 .content-wrap {
-    padding: 5rem 10rem;
-    width: 100%;
-    text-align: center;
+    
     h1 {
         font-size: 4rem;
     }
@@ -42,5 +40,13 @@
                 cursor: pointer;
             }
         }
+
+        @include mediaMd {
+            grid-template-columns: repeat(2, 1fr);
+        }
+         @include mediaSm {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
+
 }

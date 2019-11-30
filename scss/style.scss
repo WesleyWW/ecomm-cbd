@@ -93,6 +93,21 @@ section {
     height: 50vh;
 }
 
+.content-wrap {
+    padding: 5rem 10rem;
+    width: 100%;
+    text-align: center;
+    
+    @include mediaMd {
+        margin-top: 10vh;
+        padding: 5rem;
+    }
+    @include mediaSm {
+        margin-top: 10vh;
+        padding: 1rem;
+    }
+}
+
 
 //Navigation Header
 header {
