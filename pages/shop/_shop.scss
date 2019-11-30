@@ -1,0 +1,46 @@
+.content-wrap {
+    padding: 5rem 10rem;
+    width: 100%;
+    text-align: center;
+    h1 {
+        font-size: 4rem;
+    }
+
+    .shop-content-wrap {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3rem;
+
+        .shop-product {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            
+
+            .price-cut {
+                color: #6d6d6d;
+            }
+
+            .product-img {
+                height: 30rem;
+                width: 20rem;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                @include easeOut;
+
+                img {
+                    max-height: 100%;
+                    max-width: 100%;
+                }
+            }
+
+            .product-img:hover {
+                background-color: $accent-color;
+                cursor: pointer;
+            }
+        }
+    }
+}

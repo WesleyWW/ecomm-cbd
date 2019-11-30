@@ -1,0 +1,30 @@
+$primary-color: #00aeff;
+$secondary-color: #5f4277;
+$accent-color: #cee1ea;
+
+@mixin easeOut {
+    transition: all 0.5s ease-out;
+}
+
+
+//MEDIA QUERY MIXINS
+@mixin mediaXl {
+    @media screen and (min-width: 2128) {
+        @content;
+    }
+}
+@mixin mediaLg {
+    @media screen and (min-width: 926px) and (max-width: 2127px){
+        @content;
+    }
+}
+@mixin mediaMd {
+    @media screen and (min-width: 486px) and (max-width: 925px){
+        @content;
+    }
+}
+@mixin mediaSm {
+    @media screen and (max-width: 485px){
+        @content;
+    }
+}

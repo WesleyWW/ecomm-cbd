@@ -1,0 +1,48 @@
+.contacts-wrap {
+    padding: 5rem 15%;
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    
+
+    .need-help, .our-contacts {
+        padding: 1rem;
+        width: 50%;
+
+
+
+        h1, h2{
+            margin: 1rem .5rem;
+            text-align: center;
+        }
+
+       
+    }
+
+    .need-help {
+        #contact-form {
+            margin: 10rem 0;
+            padding: 0 10%;
+        }
+
+        .form-group {
+
+            .form-control {
+                width: 100%;
+                line-height: 3rem;
+            }
+        }
+    }
+
+    .our-contacts {
+        padding: 1rem 10%;
+        p {
+            color: #333;
+        }
+
+        >h2 {
+            margin-top: 10rem;
+        }
+    }
+
+}
