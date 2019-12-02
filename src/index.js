@@ -1,3 +1,6 @@
+import './styles/style.scss';
+// import './pages/shop/shop.html';
+
 //Select DOM Items
 const menuBtn = document.querySelector('.menu-btn');
 const navList = document.querySelector('.nav-list');

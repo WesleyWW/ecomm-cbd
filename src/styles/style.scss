@@ -318,7 +318,7 @@ nav {
 
 //Landing Section
 section#landing {
-    background: url('/images/bg-main.jpeg') no-repeat center;
+    background: url('../images/bg-main.jpg') no-repeat center;
     background-size: cover;
     flex-direction: column;
 
@@ -440,7 +440,7 @@ section#quality {
 #fifty-get-started {
     // padding: 2rem;
     width: 100%;
-    background: url('/images/lake.jpg') no-repeat;
+    background: url('../images/lake.jpg') no-repeat;
     background-size: cover;
     background-position-y: bottom;
     display: flex;
@@ -472,7 +472,7 @@ section#quality {
     }
 
     .container#model-side {
-        background: url('/images/model1.png') no-repeat;
+        background: url('../images/model1.png') no-repeat;
         background-size: contain;
         background-position-y: bottom;
     }
@@ -573,7 +573,7 @@ section#why-shop {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    background: url('/images/footer_banner.jpg') no-repeat center;
+    background: url('../images/footer_banner.jpg') no-repeat center;
     background-size: contain;
     color: $accent-color;
     h1 {
