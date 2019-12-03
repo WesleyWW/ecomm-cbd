@@ -9,16 +9,9 @@
     "dev:server": "webpack-dev-server",
     "deploy": "gh-pages -d dist"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:WesleyWW/ecomm-cbd.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/WesleyWW/ecomm-cbd/issues"
-  },
   "homepage": "https://wesleyww.github.io/ecomm-cbd",
   "devDependencies": {
     "@babel/core": "^7.7.4",
