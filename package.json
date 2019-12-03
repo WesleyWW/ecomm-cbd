@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "dev": "webpack-dev-server"
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "dev:server": "webpack-dev-server",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WesleyWW/ecomm-cbd.git"
+    "url": "git@github.com:WesleyWW/ecomm-cbd.git"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/WesleyWW/ecomm-cbd/issues"
   },
-  "homepage": "https://github.com/WesleyWW/ecomm-cbd#readme",
+  "homepage": "https://wesleyww.github.io/ecomm-cbd",
   "devDependencies": {
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
@@ -33,5 +35,8 @@
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "gh-pages": "^2.1.1"
   }
 }
